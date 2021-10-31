@@ -1,17 +1,16 @@
-# coding-template
+# 3D Recognition
 
-## Summary
+## Code Structure
 
-The summary can contain but is not limited to:
+## Tasks and Datasets
 
-- Code structure.
 
-- Commands to reproduce your experiments.
+## PointNet
 
-- Write-up of your findings and conclusions.
+## PointNet++
 
-- Ipython notebooks can be organized in `notebooks`.
+## Dynamic Graph CNN
 
-## Reference
+## PointCNN
 
-Any code that you borrow or other reference should be properly cited.
+## Point Transformer
