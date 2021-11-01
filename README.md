@@ -252,23 +252,25 @@ We again ablate number of points used and the learning rate.
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
 |  PointNet  |  - | 87.89 |
-|  PointNet++  |   | 92.73 |
-|  Dynamic Graph CNN  |  | 93.83 |
-|  PointCNN | | 90.16 |
+|  PointNet++  |  - | 92.73 |
+|  Dynamic Graph CNN  | 93.68 | 93.83 |
+|  PointCNN |- | 90.16 |
 |  Point Transformer | 91.85 |  91.36 |
 
 #### modelNet40
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  1024 (45 epochs) |   70.59 | 65.67  |
-|  1024 (20 epochs) |  67.84	| 63.32  |
-|  512 |  58.15	 | 54.29  |
-|  256 |  41.52	| 37.58  |
+|  PointNet  |  - | 86.78|
+|  PointNet++  |  - | 85.70 |
+|  Dynamic Graph CNN  |  88.87 | 92.34 |
+|  PointCNN |  |  |
+|  Point Transformer | | |
 
 #### ShapeNet
 | Acc  | meanIOU  | InstanceIOU | 
 |:-|:-:|:-:|:-:|
-|  1024 (40 epochs) |  90.97	|  72.29 |	79.64   |
-|  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
-|  512 |  88.63 |	67.88	| 75.86 |
-|  256 | 88.69 | 67.99  | 76.05 |
+|  PointNet  |  94.29 | 80.43 | - |
+|  PointNet++  | 91.87 | 71.13  | - |
+|  Dynamic Graph CNN  | 93.58 |-| 83.52|
+|  PointCNN | |  | |
+|  Point Transformer |  92.36	| 74.03	|81.04|
