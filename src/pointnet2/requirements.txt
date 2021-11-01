@@ -1,0 +1,4 @@
+numpy
+tqdm
+six
+torch==1.10.0

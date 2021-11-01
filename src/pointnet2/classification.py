@@ -4,6 +4,7 @@ import time
 from tqdm import tqdm
 import pickle
 import numpy as np
+import os
 
 import torch
 import torch.nn.functional as F
@@ -74,7 +75,9 @@ class Net(torch.nn.Module):
 
 def get_dataset(num_points):
     name = args.dataset
-    path = osp.join(osp.dirname(osp.realpath(__file__)), 'data', name)
+    path = osp.join(osp.dirname(osp.realpath(__file__)), 'data-' + str(name))
+    if not osp.exists(path):
+        os.mkdir(path)
     pre_transform = T.NormalizeScale()
     transform = T.SamplePoints(num_points)
 

@@ -1,4 +1,5 @@
 import os.path as osp
+import os
 import time
 from tqdm import tqdm
 import numpy as np
@@ -24,7 +25,9 @@ args = parser.parse_args()
 
 
 category = ["Airplane", "Bag" , "Cap", "Car", "Chair", "Earphone", "Guitar", "Knife"]  # Pass in None to train on all categories.
-path = osp.join(osp.dirname(osp.realpath(__file__)), 'data', 'ShapeNet')
+path = osp.join(osp.dirname(osp.realpath(__file__)), 'data-ShapeNet')
+if not osp.exists(path):
+    os.mkdir(path)
 transform = T.Compose([
     T.RandomTranslate(0.01),
     T.RandomRotate(15, axis=0),
