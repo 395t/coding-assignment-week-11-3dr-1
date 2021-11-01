@@ -267,7 +267,7 @@ We again ablate number of points used and the learning rate.
 |  Point Transformer | | |
 
 #### ShapeNet
-| Acc  | meanIOU  | InstanceIOU | 
+|| Acc  | meanIOU  | InstanceIOU | 
 |:-|:-:|:-:|:-:|
 |  PointNet  |  94.29 | 80.43 | - |
 |  PointNet++  | 91.87 | 71.13  | - |
