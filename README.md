@@ -29,7 +29,7 @@
 We report the mean accuracy within each category (mAcc) and the overall accuracy (OA) in all instances.
 
 |   | mAcc  | OA  |
-|:-:|:-:|:-:|
+|:-|:-:|:-:|
 |  1024 (160 epochs) | 66.08  | 57.85  |
 |  1024 (20 epochs) |  49.71 |  39.72 |
 |  512 | 32.29  |  21.11 |
