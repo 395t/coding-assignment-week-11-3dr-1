@@ -65,6 +65,7 @@ We again ablate number of points used and the learning rate.
 |  512 |   |   |
 |  256 |  |   |
 
+![image](https://user-images.githubusercontent.com/35536646/139623357-490a96c9-6cf2-45dc-b588-316565407356.png)
 
 
 #### Learning Rate 
@@ -88,6 +89,10 @@ We again ablate number of points used and the learning rate.
 |  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
 |  512 |   |   |  |
 |  256 | 88.69 | 67.99  | 76.05 |
+
+![image](https://user-images.githubusercontent.com/35536646/139623380-4ac0ee5d-f29e-4bc8-9816-9339f5884bb0.png)
+
+![image](https://user-images.githubusercontent.com/35536646/139623398-189f2d9e-fa46-4055-ac0a-2025573d8658.png)
 
 
 #### Learning Rate 
