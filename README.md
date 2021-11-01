@@ -242,5 +242,32 @@ We again ablate number of points used and the learning rate.
 |   | Acc  | meanIOU  | InstanceIOU | 
 |:-|:-:|:-:|:-:|
 |  1e-3 (20 epochs) | 87.32  | 64.79  | 73.98 |
-|  2e-4 |   |   |  |
-|  5e-3 |   |  |  |
+|  2e-4 |   92.36	| 74.03	|81.04    |
+|  5e-3 |  80.96|	42.87|	61.02     |
+
+
+## Comparison
+
+#### modelNet10
+|   | mAcc  | OA  |
+|:-|:-:|:-:|
+|  PointNet  |   70.59 | 65.67  |
+|  Dynamic Graph CNN  |  67.84	| 63.32  |
+|  PointCNN |  58.15	 | 54.29  |
+|  256 |  41.52	| 37.58  |
+
+#### modelNet40
+|   | mAcc  | OA  |
+|:-|:-:|:-:|
+|  1024 (45 epochs) |   70.59 | 65.67  |
+|  1024 (20 epochs) |  67.84	| 63.32  |
+|  512 |  58.15	 | 54.29  |
+|  256 |  41.52	| 37.58  |
+
+#### ShapeNet
+| Acc  | meanIOU  | InstanceIOU | 
+|:-|:-:|:-:|:-:|
+|  1024 (40 epochs) |  90.97	|  72.29 |	79.64   |
+|  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
+|  512 |  88.63 |	67.88	| 75.86 |
+|  256 | 88.69 | 67.99  | 76.05 |
