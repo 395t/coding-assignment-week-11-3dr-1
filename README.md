@@ -108,15 +108,33 @@ For all of the following experiments, the model is trained for 30 epochs using S
 ![mAccModelNet10](https://user-images.githubusercontent.com/34489261/139623587-f4436351-2047-4911-aec0-e9ffae5cb713.png)
 ![OAModelNet10](https://user-images.githubusercontent.com/34489261/139623595-ed633f06-4f88-48f6-8b46-9e9ff3c4ad6e.png)
 
-### ShapeNet
+We see that for an easy enough task, a smaller number of points can be used with very little drawbacks.
+
+### ModelNet40
 |   | mAcc | OA |
 |:-|:-:|:-:|
-| 512  | 74.98 | 92.56 |
-| 1024 | 77.85 | 93.58 |
-| 2048 | 76.11 | 91.82 |
+| 512  | 86.23 | 90.76 |
+| 1024 | 88.87 | 92.34 |
+| 2048 | 76.15 | 85.37 |
+
+![mAccModelNet40](https://user-images.githubusercontent.com/34489261/139683366-13ad3335-cf01-44c6-9b2a-e8c97834f54a.png)
+![OAModelNet40](https://user-images.githubusercontent.com/34489261/139683377-eb4be624-bbf5-47da-afed-e7bab2b910a8.png)
+
+We had to greatly decrease the batch size for 2048, which could possibly explain why the 2048 point model converges slowly. Also, due to time constraints, we could not train the model for longer than 30 epochs. It does seem that performance would continue to improve if it were given more epochs. There is a noticeable improvement between 512 and 1024 points.
+Our results are a couple points short of the results found in the original paper, though this could be due to training time. The number of epochs trained in the paper is not mentioned to our knowledge, but the default training time of the model is 250 epochs.
+
+### ShapeNet
+|   | mAcc | OA | IoU |
+|:-|:-:|:-:|:-:|
+| 512  | 74.98 | 92.56 | 81.73
+| 1024 | 77.85 | 93.58 | 83.52
+| 2048 | 76.11 | 91.82 | 79.08
 
 ![mAccShapeNet](https://user-images.githubusercontent.com/34489261/139623613-b7fa1588-7124-4248-9018-d3bbacc35ca2.png)
 ![OAShapeNet](https://user-images.githubusercontent.com/34489261/139623618-9b4cec9f-b5b0-464c-b024-57aa32a32d2d.png)
+![IoUShapeNet](https://user-images.githubusercontent.com/34489261/139683392-d774ed01-a9ab-4b44-a706-b86515b90d06.png)
+
+We see similar trends for ShapeNet with an improvement from 512 to 1024 points, but 2048 possibly needing more training. The default training time of 200 epochs could explain why our results lag a few points behind the paper's.
 
 ### Segmentation Task Example
 ![snapshot00](https://user-images.githubusercontent.com/34489261/139623648-fd8af807-423c-41bf-8e4a-d3ff81db7876.png)
