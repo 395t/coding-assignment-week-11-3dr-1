@@ -105,7 +105,7 @@ We again ablate number of points used and the learning rate.
 
 ### ShapeNet
 
-For ShapeNet, we train the model for 40 epochs, and the default hyperparameters follow that of modelNet40 and 10. Using the default hyperparameters, we get 66.08 on mAcc and 57.85 on OA.
+For ShapeNet, we also train the model for 20 epochs, and the default hyperparameters follow that of modelNet40 and 10. Using the default hyperparameters, we get 66.08 on mAcc and 57.85 on OA. (Also trained for 45 epochs, following modelNet10)
 
 We again ablate number of points used and the learning rate. 
 
