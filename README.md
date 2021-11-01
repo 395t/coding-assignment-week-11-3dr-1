@@ -14,7 +14,7 @@ The following experiments used a learning rate of 0.001, and 10 epochs. We vary 
 
 ### ModelNet10
 |   | OA |
-|:-|:-:|:-:|
+|:-|:-:|
 | 512 | 86.23 |
 | 1024 | 87.89 |
 | 2048 | 86.01 |
