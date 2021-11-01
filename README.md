@@ -49,7 +49,7 @@ The code for training and evaluating the PointNet++ model is loacted [here](http
 The following table provides an overall comparison of the performance of the model on the 3 datasets:
 
 | Dataset  | Number of Points | Test Accuracy | Test IoU |
-|:-|:-:|:-:|
+|:-|:-:|:-:|:-:|
 | ModelNet10 | 1024 | 92.73 |  |
 | ModelNet10 | 768 | 91.63 |  |
 | ModelNet10 | 512 | 90.09 |  |
