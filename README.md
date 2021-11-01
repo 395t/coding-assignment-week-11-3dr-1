@@ -45,19 +45,29 @@ For all of the following experiments, the model is trained for 30 epochs using S
 ### Segmentation Task Example
 ![snapshot00](https://user-images.githubusercontent.com/34489261/139623648-fd8af807-423c-41bf-8e4a-d3ff81db7876.png)
 
-## PointCNN
-### ModelNet10
-|   | OA | Duration |
+## PointCNN    
+### Classification   
+#### Model Details  
+#### ModelNet10
+| Points  | OA | Duration |
+|:-|:-:|:-:|
+| 512  | 89.32 | 1:03:30 |
+| 1024 | 90.16 | 1:34:55 |
+| 2048 | 89.96 | 2:41:39 |  
+
+![modelnet10_train](https://user-images.githubusercontent.com/25062790/139627046-81032657-7707-4926-a7e8-fe4e10bf1ebe.png)
+![modelnet10_test_loss](https://user-images.githubusercontent.com/25062790/139627084-f1607158-8e2a-4e31-b595-25bfdba3da46.png)  
+![modelnet10_test_accuracy](https://user-images.githubusercontent.com/25062790/139627118-358b7e67-f723-4bbe-bc67-4e26f480c144.png)
+
+#### ModelNet40
+| Points  | OA | Duration |
 |:-|:-:|:-:|
 | 512  | 0 | 0 |
 | 1024 | 0 | 0 |
-| 2048 | 0 | 0 |
-### ModelNet40
-|   | OA | Duration |
-|:-|:-:|:-:|
-| 512  | 0 | 0 |
-| 1024 | 0 | 0 |
-| 2048 | 0 | 0 |
+| 2048 | 0 | 0 |  
+
+### Segmentation  
+#### Model Details  
 
 ## Point Transformer
 
