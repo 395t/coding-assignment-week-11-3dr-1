@@ -38,7 +38,7 @@ The ShapeNet models were only trained using 1024 points.
 
 ## PointNet++
 
-The code for training and evaluating the PointNet++ model is loacted [here](https://github.com/395t/coding-assignment-week-11-3dr-1/tree/main/src/pointnet2). Follow the instructions in the readme there to run the code. We train the model for classification on ModelNet10 and ModelNet40, and for segmentation on ShapeNet. The hyper-paramaters used for reporting the following results are:
+The code for training and evaluating the PointNet++ model is located [here](https://github.com/395t/coding-assignment-week-11-3dr-1/tree/main/src/pointnet2). Follow the instructions in the readme there to run the code. We train the model for classification on ModelNet10 and ModelNet40, and for segmentation on ShapeNet. The hyper-paramaters used for reporting the following results are:
 
 * Epochs = 50
 * Optimizer = Adam
