@@ -22,6 +22,13 @@ The following experiments used a learning rate of 0.001, and 10 epochs. We vary 
 ![modelnet10_graph](https://user-images.githubusercontent.com/21282138/139634597-778fdb0f-5028-4f24-ba90-fc2958fe292a.png)
 
 ### ModelNet40
+|   | OA |
+|:-|:-:|
+| 512 | 86.34 |
+| 1024 | 86.78 |
+
+
+![modelnet40_graph](https://user-images.githubusercontent.com/21282138/139636755-7c8eca4c-73bf-4fe2-aee8-41caba25aa5d.png)
 
 ### ShapeNet
 
