@@ -84,10 +84,10 @@ We again ablate number of points used and the learning rate.
 #### Number of Points
 |   | Acc  | meanIOU  | InstanceIOU | 
 |:-|:-:|:-:|:-:|
-|  1024 (40 epochs) |   |  |  |
+|  1024 (40 epochs) |  90.97	|  72.29 |	79.64   |
 |  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
 |  512 |   |   |  |
-|  256 |  |   |  |
+|  256 | 88.69 | 67.99  | 76.05 |
 
 
 #### Learning Rate 
