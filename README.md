@@ -46,6 +46,18 @@ For all of the following experiments, the model is trained for 30 epochs using S
 ![snapshot00](https://user-images.githubusercontent.com/34489261/139623648-fd8af807-423c-41bf-8e4a-d3ff81db7876.png)
 
 ## PointCNN
+### ModelNet10
+|   | OA | Duration |
+|:-|:-:|:-:|
+| 512  | 0 | 0 |
+| 1024 | 0 | 0 |
+| 2048 | 0 | 0 |
+### ModelNet40
+|   | OA | Duration |
+|:-|:-:|:-:|
+| 512  | 0 | 0 |
+| 1024 | 0 | 0 |
+| 2048 | 0 | 0 |
 
 ## Point Transformer
 
