@@ -20,6 +20,31 @@
 
 ## Dynamic Graph CNN
 
+For all of the following experiments, the model is trained for 30 epochs using SGD as the optimizer. A learning rate of 0.001 is used with a momentum of 0.9 and a dropout rate of 0.5. We keep the default ratio of 1024:20 for the number of points to number of nearest neighbors. We ablate the number of points.
+
+### ModelNet10
+|   | mAcc | OA |
+|:-|:-:|:-:|
+| 512  | 93.81 | 94.05 |
+| 1024 | 93.68 | 93.83 |
+| 2048 | 93.96 | 94.05 |
+
+![mAccModelNet10](https://user-images.githubusercontent.com/34489261/139623587-f4436351-2047-4911-aec0-e9ffae5cb713.png)
+![OAModelNet10](https://user-images.githubusercontent.com/34489261/139623595-ed633f06-4f88-48f6-8b46-9e9ff3c4ad6e.png)
+
+### ShapeNet
+|   | mAcc | OA |
+|:-|:-:|:-:|
+| 512  | 74.98 | 92.56 |
+| 1024 | 77.85 | 93.58 |
+| 2048 | 76.11 | 91.82 |
+
+![mAccShapeNet](https://user-images.githubusercontent.com/34489261/139623613-b7fa1588-7124-4248-9018-d3bbacc35ca2.png)
+![OAShapeNet](https://user-images.githubusercontent.com/34489261/139623618-9b4cec9f-b5b0-464c-b024-57aa32a32d2d.png)
+
+### Segmentation Task Example
+![snapshot00](https://user-images.githubusercontent.com/34489261/139623648-fd8af807-423c-41bf-8e4a-d3ff81db7876.png)
+
 ## PointCNN
 
 ## Point Transformer
