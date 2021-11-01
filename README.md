@@ -6,7 +6,7 @@ See implementation details / instructions to run code in individual readme's
 
 **Tasks:** 3D Classification and Segmentation
 
-**Datasets:** ModelNet-10, ModelNet-100, ShapeNet
+**Datasets:** ModelNet-10, ModelNet-40, ShapeNet
 
 ## PointNet
 
