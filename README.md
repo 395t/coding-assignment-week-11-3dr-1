@@ -47,8 +47,8 @@ We also ablate some of the hyperparameters, including number of points used and 
 |:-|:-:|:-:|
 |  1e-3 (150 epochs) | 66.08  | 57.85  |
 |  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 | 32.29  |  21.11 |
-|  5e-3 |  30.34 | 20.72  |
+|  2e-4 |  |   |
+|  5e-3 |   |   |
 
 
 ### ModelNet10
@@ -61,7 +61,7 @@ We again ablate number of points used and the learning rate.
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
 |  1024 (40 epochs) |   70.59 | 65.67  |
-|  1024 (20 epochs) |   |   |
+|  1024 (20 epochs) |  67.84	| 63.32  |
 |  512 |   |   |
 |  256 |  |   |
 
@@ -70,10 +70,10 @@ We again ablate number of points used and the learning rate.
 #### Learning Rate 
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  1e-3 (150 epochs) | 66.08  | 57.85  |
-|  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 | 32.29  |  21.11 |
-|  5e-3 |  30.34 | 20.72  |
+|  1e-3 (40 epochs) | 70.59 |  65.67   |
+|  1e-3 (20 epochs) |  67.84	| 63.32|
+|  2e-4 |   |   |
+|  5e-3 |   |   |
 
 
 ### ShapeNet
@@ -94,7 +94,7 @@ We again ablate number of points used and the learning rate.
 #### Learning Rate 
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  1e-3 (150 epochs) | 66.08  | 57.85  |
-|  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 | 32.29  |  21.11 |
-|  5e-3 |  30.34 | 20.72  |
+|  1e-3 (150 epochs) |   |  |
+|  1e-3 (20 epochs) |   |   |
+|  2e-4 |   |   |
+|  5e-3 |   |  |
