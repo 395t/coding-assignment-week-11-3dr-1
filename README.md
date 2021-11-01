@@ -114,7 +114,7 @@ We again ablate number of points used and the learning rate.
 |:-|:-:|:-:|:-:|
 |  1024 (40 epochs) |  90.97	|  72.29 |	79.64   |
 |  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
-|  512 |   |   |  |
+|  512 |  88.63 |	67.88	| 75.86 |
 |  256 | 88.69 | 67.99  | 76.05 |
 
 ![image](https://user-images.githubusercontent.com/35536646/139623380-4ac0ee5d-f29e-4bc8-9816-9339f5884bb0.png)
