@@ -4,7 +4,7 @@ We run and test the pointnet++ model on ModelNet10 and ModelNet40 for classifica
 
 ### Installation
 
-We use the PointNet++ implementation available in [Pytorch Geomtric](https://github.com/pyg-team/pytorch_geometric) package. This requires installing the package before running the 2 scripts here:
+We use the PointNet++ implementation available in [Pytorch Geometric](https://github.com/pyg-team/pytorch_geometric) package. This requires installing the package before running the 2 scripts here:
 
 ```
 python3 -m venv my_env
