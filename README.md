@@ -64,26 +64,26 @@ Next, we examine how the performance of the model varies with training iteration
 ### ModelNet10
 
 <p align="center">
-  <img width="300" alt="ModelNet10_train_loss" src="src/pointnet2/saved_figs/ModelNet10_train_loss.png">
-  <img width="300" alt="ModelNet10_train_accuracy" src="src/pointnet2/saved_figs/ModelNet10_train_accuracy.png">
-  <img width="300" alt="ModelNet10_test_loss" src="src/pointnet2/saved_figs/ModelNet10_test_loss.png">
+  <img width="500" alt="ModelNet10_train_loss" src="src/pointnet2/saved_figs/ModelNet10_train_loss.png">
+  <img width="500" alt="ModelNet10_train_accuracy" src="src/pointnet2/saved_figs/ModelNet10_train_accuracy.png">
+  <img width="500" alt="ModelNet10_test_accuracy" src="src/pointnet2/saved_figs/ModelNet10_test_accuracy.png">
 </p>
 
 
 ### ModelNet40
 
 <p align="center">
-  <img width="300" alt="ModelNet40_train_loss" src="src/pointnet2/saved_figs/ModelNet40_train_loss.png">
-  <img width="300" alt="ModelNet40_train_accuracy" src="src/pointnet2/saved_figs/ModelNet40_train_accuracy.png">
-  <img width="300" alt="ModelNet40_test_loss" src="src/pointnet2/saved_figs/ModelNet40_test_loss.png">
+  <img width="500" alt="ModelNet40_train_loss" src="src/pointnet2/saved_figs/ModelNet40_train_loss.png">
+  <img width="500" alt="ModelNet40_train_accuracy" src="src/pointnet2/saved_figs/ModelNet40_train_accuracy.png">
+  <img width="500" alt="ModelNet40_test_accuracy" src="src/pointnet2/saved_figs/ModelNet40_test_accuracy.png">
 </p>
 
 
 ### ShapeNet
 
 <p align="center">
-  <img width="300" alt="ShapeNet_train_loss" src="src/pointnet2/saved_figs/ShapeNet_train_loss.png">
-  <img width="300" alt="ShapeNet_Performance" src="src/pointnet2/saved_figs/ShapeNet_Performance.png">
+  <img width="500" alt="ShapeNet_train_loss" src="src/pointnet2/saved_figs/ShapeNet_train_loss.png">
+  <img width="500" alt="ShapeNet_Performance" src="src/pointnet2/saved_figs/ShapeNet_Performance.png">
 </p>
 
 
