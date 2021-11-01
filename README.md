@@ -38,6 +38,55 @@ ShapeNet mIOU: 80.43%
 
 ## PointNet++
 
+The code for training and evaluating the PointNet++ model is loacted [here](https://github.com/395t/coding-assignment-week-11-3dr-1/tree/main/src/pointnet2). Follow the instructions in the readme there to run the code. We train the model for classification on ModelNet10 and ModelNet40, and for segmentation on ShapeNet. The hyper-paramaters used for reporting the following results are:
+
+* Epochs = 50
+* Optimizer = Adam
+* Learning Rate = 0.001
+* Dropout Rate = 0.5
+* Number of Points from (512, 768, 1024)
+
+The following table provides an overall comparison of the performance of the model on the 3 datasets:
+
+| Dataset  | Number of Points | Test Accuracy | Test IoU |
+|:-|:-:|:-:|
+| ModelNet10 | 1024 | 92.73 | - |
+| ModelNet10 | 768 | 91.63 | - |
+| ModelNet10 | 512 | 90.09 | - |
+| ModelNet40 | 1024 | 85.70 | - |
+| ModelNet40 | 768 | 84.08 | - |
+| ModelNet40 | 512 | 84.85 | - |
+| ShapeNet | 1024 | 91.87 | 71.13 |
+
+
+Next, we examine how the performance of the model varies with training iterations on both train and test sets. The plots also illustrate a comparison of the convergence properties with different number of points.
+
+### ModelNet10
+
+<p align="center">
+  <img width="300" alt="ModelNet10_train_loss" src="src/pointnet2/saved_figs/ModelNet10_train_loss.png">
+  <img width="300" alt="ModelNet10_train_accuracy" src="src/pointnet2/saved_figs/ModelNet10_train_accuracy.png">
+  <img width="300" alt="ModelNet10_test_loss" src="src/pointnet2/saved_figs/ModelNet10_test_loss.png">
+</p>
+
+
+### ModelNet40
+
+<p align="center">
+  <img width="300" alt="ModelNet40_train_loss" src="src/pointnet2/saved_figs/ModelNet40_train_loss.png">
+  <img width="300" alt="ModelNet40_train_accuracy" src="src/pointnet2/saved_figs/ModelNet40_train_accuracy.png">
+  <img width="300" alt="ModelNet40_test_loss" src="src/pointnet2/saved_figs/ModelNet40_test_loss.png">
+</p>
+
+
+### ShapeNet
+
+<p align="center">
+  <img width="300" alt="ShapeNet_train_loss" src="src/pointnet2/saved_figs/ShapeNet_train_loss.png">
+  <img width="300" alt="ShapeNet_Performance" src="src/pointnet2/saved_figs/ShapeNet_Performance.png">
+</p>
+
+
 ## Dynamic Graph CNN
 
 For all of the following experiments, the model is trained for 30 epochs using SGD as the optimizer. A learning rate of 0.001 is used with a momentum of 0.9 and a dropout rate of 0.5. We keep the default ratio of 1024:20 for the number of points to number of nearest neighbors. We ablate the number of points.
