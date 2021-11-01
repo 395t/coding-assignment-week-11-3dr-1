@@ -50,12 +50,12 @@ The following table provides an overall comparison of the performance of the mod
 
 | Dataset  | Number of Points | Test Accuracy | Test IoU |
 |:-|:-:|:-:|
-| ModelNet10 | 1024 | 92.73 | - |
-| ModelNet10 | 768 | 91.63 | - |
-| ModelNet10 | 512 | 90.09 | - |
-| ModelNet40 | 1024 | 85.70 | - |
-| ModelNet40 | 768 | 84.08 | - |
-| ModelNet40 | 512 | 84.85 | - |
+| ModelNet10 | 1024 | 92.73 |  |
+| ModelNet10 | 768 | 91.63 |  |
+| ModelNet10 | 512 | 90.09 |  |
+| ModelNet40 | 1024 | 85.70 |  |
+| ModelNet40 | 768 | 84.08 |  |
+| ModelNet40 | 512 | 84.85 |  |
 | ShapeNet | 1024 | 91.87 | 71.13 |
 
 
