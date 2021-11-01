@@ -251,10 +251,11 @@ We again ablate number of points used and the learning rate.
 #### modelNet10
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  PointNet  |   70.59 | 65.67  |
-|  Dynamic Graph CNN  |  67.84	| 63.32  |
-|  PointCNN |  58.15	 | 54.29  |
-|  256 |  41.52	| 37.58  |
+|  PointNet  |  - | 87.89 |
+|  PointNet++  |   | 92.73 |
+|  Dynamic Graph CNN  |  | 93.83 |
+|  PointCNN | | 90.16 |
+|  Point Transformer | 91.85 |  91.36 |
 
 #### modelNet40
 |   | mAcc  | OA  |
