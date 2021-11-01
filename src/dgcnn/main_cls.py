@@ -21,7 +21,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.optim.lr_scheduler import CosineAnnealingLR, StepLR
-from data import ModelNet40
+from data import ModelNet
 from model import PointNet, DGCNN_cls
 import numpy as np
 from torch.utils.data import DataLoader
@@ -42,9 +42,13 @@ def _init_():
     os.system('cp data.py outputs' + '/' + args.exp_name + '/' + 'data.py.backup')
 
 def train(args, io):
-    train_loader = DataLoader(ModelNet40(partition='train', num_points=args.num_points), num_workers=8,
+    if args.dataset == "modelnet10":
+        num_classes = 10
+    else:
+        num_classes = 40
+    train_loader = DataLoader(ModelNet(num_classes, partition='train', num_points=args.num_points), num_workers=8,
                               batch_size=args.batch_size, shuffle=True, drop_last=True)
-    test_loader = DataLoader(ModelNet40(partition='test', num_points=args.num_points), num_workers=8,
+    test_loader = DataLoader(ModelNet(num_classes, partition='test', num_points=args.num_points), num_workers=8,
                              batch_size=args.test_batch_size, shuffle=True, drop_last=False)
 
     device = torch.device("cuda" if args.cuda else "cpu")
@@ -53,7 +57,7 @@ def train(args, io):
     if args.model == 'pointnet':
         model = PointNet(args).to(device)
     elif args.model == 'dgcnn':
-        model = DGCNN_cls(args).to(device)
+        model = DGCNN_cls(args, num_classes).to(device)
     else:
         raise Exception("Not implemented")
 
@@ -153,7 +157,11 @@ def train(args, io):
 
 
 def test(args, io):
-    test_loader = DataLoader(ModelNet40(partition='test', num_points=args.num_points),
+    if args.dataset == "modelnet10":
+        num_classes = 10
+    else:
+        num_classes = 40
+    test_loader = DataLoader(ModelNet(num_classes, partition='test', num_points=args.num_points),
                              batch_size=args.test_batch_size, shuffle=True, drop_last=False)
 
     device = torch.device("cuda" if args.cuda else "cpu")
@@ -162,7 +170,7 @@ def test(args, io):
     if args.model == 'pointnet':
         model = PointNet(args).to(device)
     elif args.model == 'dgcnn':
-        model = DGCNN_cls(args).to(device)
+        model = DGCNN_cls(args, num_classes).to(device)
     else:
         raise Exception("Not implemented")
 
@@ -199,7 +207,7 @@ if __name__ == "__main__":
                         choices=['pointnet', 'dgcnn'],
                         help='Model to use, [pointnet, dgcnn]')
     parser.add_argument('--dataset', type=str, default='modelnet40', metavar='N',
-                        choices=['modelnet40'])
+                        choices=['modelnet40', 'modelnet10'])
     parser.add_argument('--batch_size', type=int, default=32, metavar='batch_size',
                         help='Size of batch)')
     parser.add_argument('--test_batch_size', type=int, default=16, metavar='batch_size',
