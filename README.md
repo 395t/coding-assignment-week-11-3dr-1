@@ -53,14 +53,14 @@ We also ablate some of the hyperparameters, including number of points used and 
 
 ### ModelNet10
 
-Following ModelNet40, we train the model for 20 epochs, and the default hyperparameters are unchanged. Using the default hyperparameters, we get 66.08 on mAcc and 57.85 on OA. (We can only train for 40 epochs due to resource constraints.)
+Following ModelNet40, we train the model for 20 epochs, and the default hyperparameters are unchanged. Using the default hyperparameters, we get 66.08 on mAcc and 57.85 on OA. (We can only train for 45 epochs due to resource constraints.)
 
 We again ablate number of points used and the learning rate. 
 
 #### Number of Points
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  1024 (40 epochs) |   70.59 | 65.67  |
+|  1024 (45 epochs) |   70.59 | 65.67  |
 |  1024 (20 epochs) |  67.84	| 63.32  |
 |  512 |   |   |
 |  256 |  |   |
@@ -70,10 +70,9 @@ We again ablate number of points used and the learning rate.
 #### Learning Rate 
 |   | mAcc  | OA  |
 |:-|:-:|:-:|
-|  1e-3 (40 epochs) | 70.59 |  65.67   |
 |  1e-3 (20 epochs) |  67.84	| 63.32|
-|  2e-4 |   |   |
-|  5e-3 |   |   |
+|  2e-4 | 91.85  | 91.36  |
+|  5e-3 |  10.96 | 10.00  |
 
 
 ### ShapeNet
@@ -83,18 +82,17 @@ For ShapeNet, we train the model for 40 epochs, and the default hyperparameters 
 We again ablate number of points used and the learning rate. 
 
 #### Number of Points
-|   | mAcc  | OA  |
-|:-|:-:|:-:|
-|  1024 (40 epochs) |   |  |
-|  1024 (20 epochs) |   |   |
-|  512 |   |   |
-|  256 |  |   |
+|   | Acc  | meanIOU  | InstanceIOU | 
+|:-|:-:|:-:|:-:|
+|  1024 (40 epochs) |   |  |  |
+|  1024 (20 epochs) | 87.32  | 64.79  | 73.98 |
+|  512 |   |   |  |
+|  256 |  |   |  |
 
 
 #### Learning Rate 
-|   | mAcc  | OA  |
-|:-|:-:|:-:|
-|  1e-3 (150 epochs) |   |  |
-|  1e-3 (20 epochs) |   |   |
-|  2e-4 |   |   |
-|  5e-3 |   |  |
+|   | Acc  | meanIOU  | InstanceIOU | 
+|:-|:-:|:-:|:-:|
+|  1e-3 (20 epochs) | 87.32  | 64.79  | 73.98 |
+|  2e-4 |   |   |  |
+|  5e-3 |   |  |  |
