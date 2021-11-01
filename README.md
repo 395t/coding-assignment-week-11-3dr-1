@@ -2,19 +2,39 @@
 
 ## Code Structure
 
-## Tasks and Datasets
+See implementation details / instructions to run code in individual readme's
 
-### Classification
+**Tasks:** 3D Classification and Segmentation
 
-### Segmentation
+**Datasets:** ModelNet-10, ModelNet-100, ShapeNet
 
-### ModelNet 10
+## PointNet
 
-### ModelNet 100
+The following experiments used a learning rate of 0.001, and 10 epochs. We vary the number of points sampled from the training and testing examples. All other hyper-parameters are not those reccommended in the paper.
+
+### ModelNet10
+|   | OA |
+|:-|:-:|:-:|
+| 512 | 86.23 |
+| 1024 | 87.89 |
+| 2048 | 86.01 |
+
+![modelnet10_graph](https://user-images.githubusercontent.com/21282138/139634597-778fdb0f-5028-4f24-ba90-fc2958fe292a.png)
+
+### ModelNet40
 
 ### ShapeNet
 
-## PointNet
+The ShapeNet models were only trained using 1024 points.
+
+![shapenet_classification_loss](https://user-images.githubusercontent.com/21282138/139634660-49a6f647-f4fa-4dcc-a348-29e00d4e57d3.png)
+
+![shapenet_seg_loss](https://user-images.githubusercontent.com/21282138/139634671-d34493e3-bb89-4129-8104-4d2b147a0840.png)
+
+ShapeNet OA: 94.29%
+
+ShapeNet mIOU: 80.43%
+
 
 ## PointNet++
 
