@@ -31,9 +31,9 @@ The ShapeNet models were only trained using 1024 points.
 
 ![shapenet_seg_loss](https://user-images.githubusercontent.com/21282138/139634671-d34493e3-bb89-4129-8104-4d2b147a0840.png)
 
-ShapeNet OA: 94.29%
+**ShapeNet OA:** 94.29%
 
-ShapeNet mIOU: 80.43%
+**ShapeNet mIOU:** 80.43%
 
 
 ## PointNet++
