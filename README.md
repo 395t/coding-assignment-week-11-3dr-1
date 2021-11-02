@@ -201,8 +201,8 @@ We also ablate some of the hyperparameters, including number of points used and 
 |:-|:-:|:-:|
 |  1e-3 (150 epochs) | 66.08  | 57.85  |
 |  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 | 4.04 | 2.50  |
-|  5e-3 | 86.35  | 81.67  |
+|  2e-4 | 86.35  | 81.67   |
+|  5e-3 |  4.04 | 2.50|
 
 
 ### ModelNet10
