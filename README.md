@@ -141,7 +141,17 @@ We see similar trends for ShapeNet with an improvement from 512 to 1024 points, 
 
 ## PointCNN    
 ### Classification   
-#### Model Details  
+#### Model and Training Details  
+![pointcnn](https://user-images.githubusercontent.com/25062790/139788920-767ff478-2f2d-4b9c-90a5-a59398fbc201.png)  
+* Learning rate: 0.001  
+* Learning rate decay factor: 0.5  
+* Learning rate decay step size: 50  
+* Epochs: 100  
+* Batch size: 32  
+* Num points: 512, 768, 1024, 2048
+
+
+
 #### ModelNet10
 | Points  | OA | Duration |
 |:-|:-:|:-:|
@@ -156,12 +166,15 @@ We see similar trends for ShapeNet with an improvement from 512 to 1024 points, 
 #### ModelNet40
 | Points  | OA | Duration |
 |:-|:-:|:-:|
-| 512  | 0 | 0 |
-| 1024 | 0 | 0 |
-| 2048 | 0 | 0 |  
+| 512  | 83.77 | 3:13:03 |
+| 768 | 84.89 | 3:54:42 |
+| 1024 | 84.75 | 4:33:53 |  
+
+![modelnet40_train_loss](https://user-images.githubusercontent.com/25062790/139788298-e1071997-854c-471f-8b97-31e956ec05e8.png)![modelnet40_test_loss](https://user-images.githubusercontent.com/25062790/139788309-c6818bd3-e9e7-4328-ad6a-5fd2b87d5852.png)  
+![modelnet40_test_accuracy](https://user-images.githubusercontent.com/25062790/139788396-5bf424b8-f807-45a5-adac-cf913692bb4b.png)  
 
 ### Segmentation  
-#### Model Details  
+No results 
 
 ## Point Transformer
 
@@ -263,7 +276,7 @@ We again ablate number of points used and the learning rate.
 |  PointNet  |  - | 86.78|
 |  PointNet++  |  - | 85.70 |
 |  Dynamic Graph CNN  |  88.87 | 92.34 |
-|  PointCNN |  |  |
+|  PointCNN | - | 84.89 |
 |  Point Transformer | 81.67| 86.35|
 
 #### ShapeNet
