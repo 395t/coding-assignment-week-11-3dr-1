@@ -141,7 +141,17 @@ We see similar trends for ShapeNet with an improvement from 512 to 1024 points, 
 
 ## PointCNN    
 ### Classification   
-#### Model Details  
+#### Model and Training Details  
+![pointcnn](https://user-images.githubusercontent.com/25062790/139788920-767ff478-2f2d-4b9c-90a5-a59398fbc201.png)  
+* Learning rate: 0.001  
+* Learning rate decay factor: 0.5  
+* Learning rate decay step size: 50  
+* Epochs: 100  
+* Batch size: 32  
+* Num points: 512, 768, 1024, 2048
+
+
+
 #### ModelNet10
 | Points  | OA | Duration |
 |:-|:-:|:-:|
@@ -156,12 +166,15 @@ We see similar trends for ShapeNet with an improvement from 512 to 1024 points, 
 #### ModelNet40
 | Points  | OA | Duration |
 |:-|:-:|:-:|
-| 512  | 0 | 0 |
-| 1024 | 0 | 0 |
-| 2048 | 0 | 0 |  
+| 512  | 83.77 | 3:13:03 |
+| 768 | 84.89 | 3:54:42 |
+| 1024 | 84.75 | 4:33:53 |  
+
+![modelnet40_train_loss](https://user-images.githubusercontent.com/25062790/139788298-e1071997-854c-471f-8b97-31e956ec05e8.png)![modelnet40_test_loss](https://user-images.githubusercontent.com/25062790/139788309-c6818bd3-e9e7-4328-ad6a-5fd2b87d5852.png)  
+![modelnet40_test_accuracy](https://user-images.githubusercontent.com/25062790/139788396-5bf424b8-f807-45a5-adac-cf913692bb4b.png)  
 
 ### Segmentation  
-#### Model Details  
+No results 
 
 ## Point Transformer
 
@@ -174,7 +187,7 @@ For each experiment, we train the model for 20 epochs (except for the default se
 We also ablate some of the hyperparameters, including number of points used and the learning rate. 
 
 #### Number of Points
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1024 (150 epochs) | 66.08  | 57.85  |
 |  1024 (20 epochs) |  49.71 |  39.72 |
@@ -184,12 +197,12 @@ We also ablate some of the hyperparameters, including number of points used and 
 ![image](https://user-images.githubusercontent.com/35536646/139611980-ed02b7ba-7771-4976-8bea-b82ce67f3737.png)
 
 #### Learning Rate 
-|   | mAcc  | OA  |
+|   | OA | mAcc  |
 |:-|:-:|:-:|
 |  1e-3 (150 epochs) | 66.08  | 57.85  |
 |  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 |  |   |
-|  5e-3 |   |   |
+|  2e-4 | 4.04 | 2.50  |
+|  5e-3 | 86.35  | 81.67  |
 
 
 ### ModelNet10
@@ -199,7 +212,7 @@ Following ModelNet40, we train the model for 20 epochs, and the default hyperpar
 We again ablate number of points used and the learning rate. 
 
 #### Number of Points
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1024 (45 epochs) |   70.59 | 65.67  |
 |  1024 (20 epochs) |  67.84	| 63.32  |
@@ -212,7 +225,7 @@ We again ablate number of points used and the learning rate.
 
 
 #### Learning Rate 
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1e-3 (20 epochs) |  67.84	| 63.32|
 |  2e-4 | 91.85  | 91.36  |
@@ -255,7 +268,7 @@ We again ablate number of points used and the learning rate.
 |  PointNet++  |  - | 92.73 |
 |  Dynamic Graph CNN  | 93.68 | 93.83 |
 |  PointCNN |- | 90.16 |
-|  Point Transformer | 91.85 |  91.36 |
+|  Point Transformer | 91.36 | 91.85  |
 
 #### modelNet40
 |   | mAcc  | OA  |
@@ -263,8 +276,8 @@ We again ablate number of points used and the learning rate.
 |  PointNet  |  - | 86.78|
 |  PointNet++  |  - | 85.70 |
 |  Dynamic Graph CNN  |  88.87 | 92.34 |
-|  PointCNN |  |  |
-|  Point Transformer | | |
+|  PointCNN | - | 84.89 |
+|  Point Transformer | 81.67| 86.35|
 
 #### ShapeNet
 || Acc  | meanIOU  | InstanceIOU | 
@@ -272,5 +285,5 @@ We again ablate number of points used and the learning rate.
 |  PointNet  |  94.29 | 80.43 | - |
 |  PointNet++  | 91.87 | 71.13  | - |
 |  Dynamic Graph CNN  | 93.58 |-| 83.52|
-|  PointCNN | |  | |
+|  PointCNN | - | - | - |
 |  Point Transformer |  92.36	| 74.03	|81.04|
