@@ -174,7 +174,7 @@ For each experiment, we train the model for 20 epochs (except for the default se
 We also ablate some of the hyperparameters, including number of points used and the learning rate. 
 
 #### Number of Points
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1024 (150 epochs) | 66.08  | 57.85  |
 |  1024 (20 epochs) |  49.71 |  39.72 |
@@ -184,12 +184,12 @@ We also ablate some of the hyperparameters, including number of points used and 
 ![image](https://user-images.githubusercontent.com/35536646/139611980-ed02b7ba-7771-4976-8bea-b82ce67f3737.png)
 
 #### Learning Rate 
-|   | mAcc  | OA  |
+|   | OA | mAcc  |
 |:-|:-:|:-:|
 |  1e-3 (150 epochs) | 66.08  | 57.85  |
 |  1e-3 (20 epochs) |  49.71 |  39.72 |
-|  2e-4 |  |   |
-|  5e-3 |   |   |
+|  2e-4 | 4.04 | 2.50  |
+|  5e-3 | 86.35  | 81.67  |
 
 
 ### ModelNet10
@@ -199,7 +199,7 @@ Following ModelNet40, we train the model for 20 epochs, and the default hyperpar
 We again ablate number of points used and the learning rate. 
 
 #### Number of Points
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1024 (45 epochs) |   70.59 | 65.67  |
 |  1024 (20 epochs) |  67.84	| 63.32  |
@@ -212,7 +212,7 @@ We again ablate number of points used and the learning rate.
 
 
 #### Learning Rate 
-|   | mAcc  | OA  |
+|   | OA  | mAcc  |
 |:-|:-:|:-:|
 |  1e-3 (20 epochs) |  67.84	| 63.32|
 |  2e-4 | 91.85  | 91.36  |
@@ -255,7 +255,7 @@ We again ablate number of points used and the learning rate.
 |  PointNet++  |  - | 92.73 |
 |  Dynamic Graph CNN  | 93.68 | 93.83 |
 |  PointCNN |- | 90.16 |
-|  Point Transformer | 91.85 |  91.36 |
+|  Point Transformer | 91.36 | 91.85  |
 
 #### modelNet40
 |   | mAcc  | OA  |
@@ -264,7 +264,7 @@ We again ablate number of points used and the learning rate.
 |  PointNet++  |  - | 85.70 |
 |  Dynamic Graph CNN  |  88.87 | 92.34 |
 |  PointCNN |  |  |
-|  Point Transformer | | |
+|  Point Transformer | 81.67| 86.35|
 
 #### ShapeNet
 || Acc  | meanIOU  | InstanceIOU | 
