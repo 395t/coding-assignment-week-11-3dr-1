@@ -285,5 +285,5 @@ We again ablate number of points used and the learning rate.
 |  PointNet  |  94.29 | 80.43 | - |
 |  PointNet++  | 91.87 | 71.13  | - |
 |  Dynamic Graph CNN  | 93.58 |-| 83.52|
-|  PointCNN | |  | |
+|  PointCNN | - | - | - |
 |  Point Transformer |  92.36	| 74.03	|81.04|
